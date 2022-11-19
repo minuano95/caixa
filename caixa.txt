@@ -1,0 +1,8 @@
+Método de pagamento: Cartão
+
+  Código  Produto         Quantidade    Preço
+--------  ------------  ------------  -------
+       1  coca-cola 2L             1        9
+Total: R$9.0
+
+Data: 15/11/2022, 19:54:33
