@@ -6,7 +6,7 @@ Protótipo de caixa para lojas
   <li><a href="#Estoque">Estoque</a></li>
   <li><a href="#Cadastro de produtos">Cadastro de produtos</a></li>
   <li><a href="#Editar produto">Editar Produto</a></li>
-  <li><a href="#Excluir">Excluir Produto</a></li>
+  <li><a href="#Excluir produto">Excluir Produto</a></li>
 </ul>
 
 
