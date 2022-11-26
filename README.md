@@ -11,3 +11,6 @@ Após adicionar os produtos e apertar o botão de finalizar a compra a janela de
 ![image](https://user-images.githubusercontent.com/67676175/204076142-7d140ece-c933-4d1c-a3f8-bee42d3e4a0e.png)
 
 O desconto poder ser tanto em real quanto em porcentagem.
+
+<h2>Janela de estoque</h2>
+![image](https://user-images.githubusercontent.com/67676175/204076224-2f320b26-d22e-491a-a1a2-d9d17a25aa3a.png)
