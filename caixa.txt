@@ -1,8 +1,11 @@
-MÈtodo de pagamento: Cart„o
+M√©todo de pagamento: Cart√£o
 
-  CÛdigo  Produto         Quantidade    PreÁo
---------  ------------  ------------  -------
-       1  coca-cola 2L             1        9
-Total: R$9.0
+  C√≥digo  Produto         Quantidade    Valor Unit√°rio    Valor Total
+--------  ------------  ------------  ----------------  -------------
+    1516  Coca-cola 2L             4               9.5             38
 
-Data: 15/11/2022, 19:54:33
+Total: R$38.0
+Recebido: R$40
+Troco: R$2.0
+
+Data: 20/11/2022, 19:06:00

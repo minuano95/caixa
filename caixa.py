@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'mainwindow.ui'
+# Form implementation generated from reading ui file 'caixa.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.0
 #
@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
         self.main_body.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.main_body.setObjectName("main_body")
         self.btn_confirmar = QtWidgets.QPushButton(self.main_body)
-        self.btn_confirmar.setGeometry(QtCore.QRect(300, 410, 231, 35))
+        self.btn_confirmar.setGeometry(QtCore.QRect(310, 410, 231, 35))
         font = QtGui.QFont()
         font.setFamily("Segoe UI Semibold")
         font.setPointSize(15)
@@ -41,9 +41,13 @@ class Ui_MainWindow(object):
         self.btn_confirmar.setAutoFillBackground(False)
         self.btn_confirmar.setStyleSheet("background-color: rgb(12, 27, 37);\n"
 "color: rgb(255, 255, 255);")
+        self.btn_confirmar.setCheckable(False)
+        self.btn_confirmar.setChecked(False)
+        self.btn_confirmar.setAutoRepeatDelay(300)
+        self.btn_confirmar.setAutoRepeatInterval(3)
         self.btn_confirmar.setObjectName("btn_confirmar")
         self.qnt_label = QtWidgets.QLabel(self.main_body)
-        self.qnt_label.setGeometry(QtCore.QRect(90, 310, 118, 27))
+        self.qnt_label.setGeometry(QtCore.QRect(100, 310, 118, 27))
         font = QtGui.QFont()
         font.setFamily("Segoe UI Light")
         font.setPointSize(15)
@@ -53,7 +57,7 @@ class Ui_MainWindow(object):
         self.qnt_label.setObjectName("qnt_label")
         self.codigo_label = QtWidgets.QLabel(self.main_body)
         self.codigo_label.setEnabled(True)
-        self.codigo_label.setGeometry(QtCore.QRect(110, 220, 72, 27))
+        self.codigo_label.setGeometry(QtCore.QRect(120, 220, 72, 27))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -67,7 +71,7 @@ class Ui_MainWindow(object):
         self.codigo_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.codigo_label.setObjectName("codigo_label")
         self.codigo_input = QtWidgets.QLineEdit(self.main_body)
-        self.codigo_input.setGeometry(QtCore.QRect(260, 220, 311, 41))
+        self.codigo_input.setGeometry(QtCore.QRect(270, 220, 311, 41))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.codigo_input.setFont(font)
@@ -76,7 +80,7 @@ class Ui_MainWindow(object):
         self.codigo_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.codigo_input.setObjectName("codigo_input")
         self.qnt_input = QtWidgets.QLineEdit(self.main_body)
-        self.qnt_input.setGeometry(QtCore.QRect(260, 300, 311, 41))
+        self.qnt_input.setGeometry(QtCore.QRect(270, 300, 311, 41))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.qnt_input.setFont(font)
@@ -98,7 +102,7 @@ class Ui_MainWindow(object):
         self.produtos.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.produtos.setObjectName("produtos")
         self.label_logo = QtWidgets.QLabel(self.produtos)
-        self.label_logo.setGeometry(QtCore.QRect(9, 9, 621, 60))
+        self.label_logo.setGeometry(QtCore.QRect(9, 9, 631, 60))
         self.label_logo.setMinimumSize(QtCore.QSize(0, 60))
         self.label_logo.setMaximumSize(QtCore.QSize(16777215, 70))
         font = QtGui.QFont()
@@ -113,12 +117,17 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Segoe UI Light")
         font.setPointSize(15)
+        font.setKerning(True)
         self.tabela_produtos.setFont(font)
         self.tabela_produtos.setStyleSheet("border: 1px solid rgb(239,239,239);\n"
 "")
+        self.tabela_produtos.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
+        self.tabela_produtos.setFrameShadow(QtWidgets.QFrame.Shadow.Plain)
         self.tabela_produtos.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self.tabela_produtos.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.SizeAdjustPolicy.AdjustIgnored)
+        self.tabela_produtos.setAlternatingRowColors(True)
         self.tabela_produtos.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollMode.ScrollPerItem)
+        self.tabela_produtos.setShowGrid(True)
         self.tabela_produtos.setGridStyle(QtCore.Qt.PenStyle.SolidLine)
         self.tabela_produtos.setObjectName("tabela_produtos")
         self.tabela_produtos.setColumnCount(5)
@@ -166,7 +175,7 @@ class Ui_MainWindow(object):
         self.tabela_produtos.horizontalHeader().setMinimumSectionSize(39)
         self.tabela_produtos.horizontalHeader().setSortIndicatorShown(True)
         self.total_label = QtWidgets.QLabel(self.produtos)
-        self.total_label.setGeometry(QtCore.QRect(248, 570, 151, 27))
+        self.total_label.setGeometry(QtCore.QRect(250, 570, 151, 27))
         self.total_label.setMinimumSize(QtCore.QSize(0, 27))
         font = QtGui.QFont()
         font.setFamily("Segoe UI Semibold")
@@ -219,6 +228,10 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        MainWindow.setTabOrder(self.codigo_input, self.qnt_input)
+        MainWindow.setTabOrder(self.qnt_input, self.btn_confirmar)
+        MainWindow.setTabOrder(self.btn_confirmar, self.btn_finalizar_2)
+        MainWindow.setTabOrder(self.btn_finalizar_2, self.tabela_produtos)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -243,6 +256,7 @@ class Ui_MainWindow(object):
         self.tabela_produtos.setSortingEnabled(__sortingEnabled)
         self.total_label.setText(_translate("MainWindow", "Total: R$00.00"))
         self.btn_finalizar_2.setText(_translate("MainWindow", "FINALIZAR VENDA"))
+        self.btn_finalizar_2.setShortcut(_translate("MainWindow", "F11"))
         self.menuEstoque.setTitle(_translate("MainWindow", "Estoque"))
         self.menuRegistro.setTitle(_translate("MainWindow", "Registro"))
         self.actionAdicionar_produto_ao_estoqeu.setText(_translate("MainWindow", "Adicionar produto ao estoque"))
