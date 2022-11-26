@@ -20,6 +20,16 @@ O desconto poder ser tanto em real quanto em porcentagem.
 <br><br><br>
 
 
-<h2 id="estoque">Janela de Estoque</h2>
+<h2 id="estoque">Estoque</h2>
 <img src="https://user-images.githubusercontent.com/67676175/204076224-2f320b26-d22e-491a-a1a2-d9d17a25aa3a.png" alt="Estoque">
-<br>
+<br><br>
+
+
+<h2>Cadastro de Produtos</h2>
+<img src="![image](https://user-images.githubusercontent.com/67676175/204093005-0191b4ab-999b-44f1-9f58-597abf7f7898.png)" alt="Cadastro de produtos">
+
+
+<h2></h2>
+
+
+<h2></h2>
