@@ -4,6 +4,7 @@ Protótipo de caixa para lojas
   <li><a href="#Menu">Menu</a></li>
   <li><a href="#Vendas">Vendas</a></li>
   <li><a href="#Estoque">Estoque</a></li>
+  <li><a href="#Cadastro de produtos">Cadastro de produtos</a></li>
 </ul>
 
 
@@ -25,8 +26,8 @@ O desconto poder ser tanto em real quanto em porcentagem.
 <br><br>
 
 
-<h2>Cadastro de Produtos</h2>
-<img src="![image](https://user-images.githubusercontent.com/67676175/204093005-0191b4ab-999b-44f1-9f58-597abf7f7898.png)" alt="Cadastro de produtos">
+<h2 id="cadastrar produto">Cadastro de Produtos</h2>
+<img src="https://user-images.githubusercontent.com/67676175/204093005-0191b4ab-999b-44f1-9f58-597abf7f7898.png" alt="Cadastro de produtos">
 
 
 <h2></h2>
