@@ -26,7 +26,7 @@ O desconto poder ser tanto em real quanto em porcentagem.
 <br><br>
 
 
-<h2 id="cadastrar produto">Cadastro de Produtos</h2>
+<h2 id="cadastro de produtos">Cadastro de Produtos</h2>
 <img src="https://user-images.githubusercontent.com/67676175/204093005-0191b4ab-999b-44f1-9f58-597abf7f7898.png" alt="Cadastro de produtos">
 
 
