@@ -61,7 +61,7 @@ class AdicionarItem(QtWidgets.QWidget, Ui_Form3):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         return conn, cursor
@@ -155,7 +155,7 @@ class EstoqueWindow(QtWidgets.QWidget, Ui_Form4):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         cursor.execute('SELECT * FROM produto')
@@ -172,7 +172,7 @@ class EstoqueWindow(QtWidgets.QWidget, Ui_Form4):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         cursor.execute('SELECT * FROM produto')
@@ -315,7 +315,7 @@ class DeletarProduto(QtWidgets.QWidget, Ui_Form5):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         if len(self.lineEdit.text()) < 1:
@@ -344,7 +344,7 @@ class DeletarProduto(QtWidgets.QWidget, Ui_Form5):
             conn = mysql.connector.connect(
                 host='localhost',
                 user='root',
-                password='Minuano95.',
+                password='',
                 database='produtos')
             cursor = conn.cursor()
             cursor.execute(
@@ -383,7 +383,7 @@ class EditarProdutoWindow(QtWidgets.QWidget, Ui_Form6):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         cursor.execute(
@@ -417,7 +417,7 @@ class EditarProdutoWindow(QtWidgets.QWidget, Ui_Form6):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         return conn, cursor
@@ -612,7 +612,7 @@ class GUI_cont(QMainWindow, Ui_MainWindow):
         conn = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Minuano95.',
+            password='',
             database='produtos')
         cursor = conn.cursor()
         return conn, cursor
