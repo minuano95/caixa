@@ -1,5 +1,9 @@
 # caixa
 Protótipo de caixa para lojas
+<ul>
+  <li><a href="#Menu">Menu</a></li>
+</ul>
+
 
 <h2>Menu</h2>
 ![image](https://user-images.githubusercontent.com/67676175/204076073-de47224e-d4a1-4f1a-a477-5c5e27a88fa5.png)
